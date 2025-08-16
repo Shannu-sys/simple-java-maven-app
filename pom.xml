@@ -16,7 +16,7 @@
   </properties>
 
   <dependencies>
-    <!-- JUnit 5 API + Engine for running tests -->
+    <!-- JUnit 5 API + Engine -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
@@ -43,7 +43,7 @@
         </configuration>
       </plugin>
 
-      <!-- JAR with Main-Class -->
+      <!-- Create executable JAR -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
@@ -59,7 +59,7 @@
         </configuration>
       </plugin>
 
-      <!-- Run JUnit 5 tests on Java 17 -->
+      <!-- Run JUnit 5 tests -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
@@ -69,7 +69,7 @@
         </configuration>
       </plugin>
 
-      <!-- Enforcer: allow Java 17; keep a reasonable Maven floor -->
+      <!-- Enforcer: allow Java 17 -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
@@ -94,4 +94,3 @@
     </plugins>
   </build>
 </project>
-`
